@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #2D336B;
 }
@@ -62,6 +66,7 @@ body {
     gap: 40px;
     padding: 3%;
     justify-content: center;
+    margin: auto;
 }
 
 .picture {
@@ -135,3 +140,4 @@ body {
 
 /* 3D Flip Box: https://www.w3schools.com/howto/howto_css_flip_box.asp */
 /* grid: https://www.w3schools.com/css/css_grid.asp */
+/* box-sizing: http://127.0.0.1:3000/index.html */
