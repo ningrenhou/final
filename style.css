@@ -1,0 +1,137 @@
+body {
+    background-color: #2D336B;
+}
+@font-face {
+    font-family: 'IstokWeb-Bold';
+    src: url('/csfinal/fonts/IstokWeb-Bold.ttf') format('turetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kadwa-Regular';
+    src: url('/csfinal/fonts/Kadwa-Regular.ttf') format('turetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Title {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: auto;
+}
+
+.Title h1 {
+    font-family: 'IstokWeb-Bold', sans-serif;
+    font-size: 70pt;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    text-align: center;
+    color:#FFF2F2;
+}
+
+.title {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: auto;
+}
+
+.title h1 {
+    font-family: 'IstokWeb-Bold', sans-serif;
+    font-size: 40pt;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    text-align: center;
+    color:#FFF2F2;
+}
+
+.procreate-title h1 {
+    font-family: 'IstokWeb-Bold', sans-serif;
+    font-size: 40pt;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    text-align: center;
+    color:#FFF2F2;
+}
+
+.draw {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+    padding: 3%;
+    justify-content: center;
+}
+
+.picture {
+    width: 500px;
+    height: 600px;
+    text-align: center;
+}
+
+/* This is my favorite part, it's the most important part of the whole css code, because if I hadn't gotten the 3D rotation effect here, I wouldn't have been able to do the flipping of my image. I used what I learned and it helped my image and text to be able to do the 3D flip effect and I really like this code! */
+.picture:hover .picture-rong{
+    transform: rotateY(180deg); 
+}
+
+.picture-rong {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.picture-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.picture-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.picture-text h1 {
+    font-family: 'Kadwa-Regular', serif;
+    font-size: 30pt;
+    padding-top: 25%;
+    text-align: center;
+}
+
+.picture-text p {
+    font-family: 'Kadwa-Regular', serif;
+    font-size: 15pt;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    margin: auto;
+    text-align: left;
+}
+
+.picture-rong img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.picture-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #A9B5DF;
+    color: #2D336B;
+    transform: rotateY(180deg);
+}
+
+/* 3D Flip Box: https://www.w3schools.com/howto/howto_css_flip_box.asp */
+/* grid: https://www.w3schools.com/css/css_grid.asp */
